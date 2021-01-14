@@ -39,15 +39,18 @@ changes.pop(0)
 
 avg_change = round(sum(changes)/len(changes), 2)
 
-print(changes.index(max(changes)))
+# print(changes.index(max(changes)))
 
-print(net)
-print(num_months)
-print(changes[:5])
-print(avg_change)
-print(max(changes))
-print(min(changes))
-print(data_list)
+# print(net)
+# print(num_months)
+# print(changes[:5])
+# print(avg_change)
+# print(max(changes))
+# print(min(changes))
+# print(data_list)
+
+print(f'month: {num_months}')
+print(f'average change: {avg_change}')
 
 
  
