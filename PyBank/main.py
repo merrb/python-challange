@@ -39,18 +39,30 @@ changes.pop(0)
 
 avg_change = round(sum(changes)/len(changes), 2)
 
+increase = max(changes)
+decrease = min(changes)
+
+# for row in changes:
+#     if row[1] == increase:
+#         high = row
+#     if row[1] == decrease:
+#         low = row
+
 # print(changes.index(max(changes)))
 
 # print(net)
 # print(num_months)
-# print(changes[:5])
+# print(changes)
 # print(avg_change)
 # print(max(changes))
 # print(min(changes))
 # print(data_list)
 
 print(f'month: {num_months}')
-print(f'average change: {avg_change}')
+print(f'amount: {net}')
+print(f'change: {avg_change}')
+print(f'increase: {increase}')
+print(f'decrease: {decrease}')
 
 
  
