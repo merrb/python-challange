@@ -6,7 +6,7 @@ path = "03-Python_02-Homework_Instructions_PyPoll_Resources_election_data.csv"
 
 
 #varibles
-votes = [0]
+votes = []
 candidates = []
 precentage_votes = []
 candidates_total_votes = []
@@ -27,8 +27,16 @@ with open(path) as csvfile:
     #total number of candidates in the data set
     num_votes = (len(data_list))
 
-#total votes
-     total_count
+    for row in data_list:
+        print(votes.append(row[1]))
+
+        #print(row)
+        #print(row.count(candidates))
+        #percent = round(int(row[6]) / int(row[5]), 2)
+        #review_percent.append(percent)
+
+        #total votes
+        #candidate_total_votes
 
 #total number of candidates
-     candidates
+     #candidates
