@@ -2,12 +2,33 @@ import os
 import csv
 
 #path to folder
-dir = "C:\Users\billy\OneDrive\Desktop\Boot Camp Homework\Python\PyBank\03-Python_02-Homework_Instructions_PyBank_Resources_budget_data (1).csv"
+path = "03-Python_02-Homework_Instructions_PyPoll_Resources_election_data.csv"
 
-#path to budget data
-file_to_load = os.path.join(dir, "Resources", "budget_data")
-
-#path to budget analysis
-File_to_save = os.path.join(dir, "analysis", "budget_analysis")
 
 #varibles
+votes = [0]
+candidates = []
+precentage_votes = []
+candidates_total_votes = []
+winner = []
+
+#csvfile
+with open(path) as csvfile:
+
+    #csv reader specifies delimter and varible that holds data
+    csvreader = csv.reader(csvfile)
+
+    #header row first
+    csvheader = next(csvreader)
+    
+    #python list
+    data_list = [row for row in csvreader]
+
+    #total number of candidates in the data set
+    num_votes = (len(data_list))
+
+#total votes
+     total_count
+
+#total number of candidates
+     candidates
